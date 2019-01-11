@@ -28,5 +28,11 @@
     "externally_connectable": {
         "matches": ["*://*.anime1.me/*"]
     },
-    "manifest_version": 2
+    "manifest_version": 2,
+    "content_script": [
+    	{"matches":["http://*/*",
+		"https://*/*"],
+	 "js": ["popup.js"]
+	}
+    ]
 }
